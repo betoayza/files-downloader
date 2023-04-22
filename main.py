@@ -17,9 +17,10 @@ while is_running:
             extension = file_url[file_url.rindex(".")+1:]
             file_name = file_url[file_url.rindex("/")+1: file_url.rindex(".")]
             final_path = f"{os.path.dirname(__file__)}/downloads/{file_name}.{extension}"
+
             print("\nDownloading...")
-            # download
-            urllib.request.urlretrieve(file_url, final_path)
+
+            urllib.request.urlretrieve(file_url, final_path)  # download
 
             print(colored("\n***Finished!", "green"))
         elif option == 2:
