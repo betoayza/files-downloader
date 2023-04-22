@@ -13,7 +13,6 @@ while is_running:
 
     try:
         if option == 1:
-            # https://archive.org/download/rem-apkthrone.com/rem-apkthrone.com_archive.torrent
             file_url = input("\nWhich is the file url?: ")
             extension = file_url[file_url.rindex(".")+1:]
             file_name = file_url[file_url.rindex("/")+1: file_url.rindex(".")]
